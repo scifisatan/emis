@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel=”manifest” href=”manifest.json”>
+
+  <link rel="icon" type="image" href="/assets/khwopa-f12780fb.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khwopa EMIS</title>
+  <script type="module" crossorigin src="/assets/index-8538475e.js"></script>
+  <link rel="stylesheet" href="/assets/index-4c8eb1aa.css">
+</head>
+
+<body>
+  <div id="root"></div>
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('./serviceWorker.js').then(function (registration) {
+          // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }, function (err) {
+        // registration failed :(
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    });
+      }
+  </script>
+</body>
+
+</html>

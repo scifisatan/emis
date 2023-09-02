@@ -1,6 +1,6 @@
 {
-    "name": "PWA demo",
-    "short_name": "Demo",
+    "name": "Khwopa EMIS",
+    "short_name": "EMIS",
     "start_url": "index.html",
     "icons": [
         {
